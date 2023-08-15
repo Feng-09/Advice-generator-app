@@ -1,0 +1,109 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: manropeReg;
+  src: url(fonts/Manrope-Regular.ttf);
+}
+
+@font-face {
+  font-family: manropeBold;
+  src: url(fonts/Manrope-Bold.ttf);
+}
+
+/*colors*/
+$lCyan: hsl(193, 38%, 86%);
+$neon: hsl(150, 100%, 66%);
+$neonGlow: hsl(150, 94%, 74%);
+$grayBlue: hsl(217, 19%, 38%);
+$darkGray: hsl(217, 19%, 24%);
+$darkBlue: hsl(218, 23%, 16%);
+
+@mixin text($font, $size, $weight, $color) {
+  font-family: $font;
+  font-size: $size;
+  font-weight: $weight;
+  color: $color;
+}
+
+body {
+  background-color: $darkBlue;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  main {
+    background-color: $darkGray;
+    text-align: center;
+    width: 95%;
+    max-width: 24rem;
+    max-height: 36rem;
+    border-radius: 0.6rem;
+    position: relative;
+    padding: 2rem;
+    padding-bottom: 3.6rem;
+    b {
+      @include text(manropeReg, 0.8rem, 600, $neon);
+      text-transform: uppercase;
+      letter-spacing: 0.3rem;
+    }
+
+    p {
+      @include text(manropeBold, 2rem, 800, $lCyan);
+      line-height: 3rem;
+      padding: 2rem 0;
+      height: fit-content;
+    }
+
+    button {
+      position: absolute;
+      bottom: -1.8rem;
+      left: 50%;
+      margin-left: -2rem;
+      width: 4rem;
+      height: 4rem;
+      background-color: $neon;
+      border-radius: 5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      outline: none;
+      border: none;
+      transition: 0.2s;
+
+      &:hover {
+        box-shadow: 0 0 3rem 0.2rem $neonGlow;
+        cursor: pointer;
+        transition: 0.2s;
+      }
+
+      img {
+        width: 1.8rem;
+      }
+    }
+  }
+
+  footer {
+    position: fixed;
+    bottom: 0;
+    @include text(manropeReg, 0.8rem, 400, $lCyan);
+    a {
+      text-decoration: none;
+    }
+  }
+}
+
+@media screen and (min-width: 720px) {
+  body {
+    main {
+      width: 34rem;
+      padding: 3rem;
+      max-width: none;
+    }
+  }
+}
