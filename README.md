@@ -14,7 +14,7 @@ Sass/scss and Javascript
 
 ### Links
 
-- Live Site URL: [fengboris-advice-generator.netlify.app](fengboris-advice-generator.netlify.app)
+- Live Site URL: [https://fengboris-advice-generator.netlify.app](https://fengboris-advice-generator.netlify.app)
 
 ### Built with
 
