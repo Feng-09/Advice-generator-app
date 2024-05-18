@@ -10,11 +10,11 @@ Sass/scss and Javascript
 
 ### Screenshot
 
-![Web capture_15-8-2023_71420_127.0.0.1.jpeg](Web%20capture_15-8-2023_71420_127.0.0.1.jpeg)
+![Screenshot](Web%20capture_15-8-2023_71420_127.0.0.1.jpeg)
 
 ### Links
 
-- Live Site URL: [https://fengboris-advice-generator.netlify.app](https://fengboris-advice-generator.netlify.app)
+- Live Site URL: [https://feng-advice-generator.netlify.app](https://feng-advice-generator.netlify.app)
 
 ### Built with
 
